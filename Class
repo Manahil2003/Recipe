@@ -1,0 +1,49 @@
+class Recipe {
+  String id;
+  String title;
+  String imageUrl;
+  int duration;
+  List ingredients;
+  List steps;
+  bool isGlutenFree;
+  bool isVegan;
+  bool isVegetarian;
+  bool isLactoseFree;
+
+  Recipe({
+    required String this.id,
+    required List this.ingredients,
+    required List this.steps,
+    required String this.title,
+    required String this.imageUrl,
+    required int this.duration,
+    required bool this.isGlutenFree,
+    required bool this.isVegan,
+    required bool this.isVegetarian,
+    required bool this.isLactoseFree,
+  });
+
+  display() {
+    print("");
+    print("ID : $id");
+    print("");
+    print("Title : $title");
+    print("");
+    print("ImageUrl : $imageUrl");
+    print("");
+    print("Duration : $duration");
+    print("");
+    print("Ingredients : $ingredients");
+    print("");
+    print("Steps : $steps");
+    print("");
+    print("Gluten Free : $isGlutenFree");
+    print("");
+    print("Vegan : $isVegan");
+    print("");
+    print("Vegetarian : $isVegetarian");
+    print("");
+    print("Lactose Free : $isLactoseFree");
+    print("");
+  }
+}
